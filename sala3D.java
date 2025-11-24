@@ -1,0 +1,23 @@
+public class sala3D extends Reserva {
+
+    private double valorLentes ; 
+
+    public sala3D (String codigo, String nombrePelicula, double costoBase, double valorLentes){
+        super(nombrePelicula, nombrePelicula, costoBase); 
+        this.valorLentes = valorLentes; 
+    
+    }
+    public double getValorLentes() {
+        return valorLentes;
+    }
+    public void setValorLentes(double valorLentes) {
+        this.valorLentes = valorLentes;
+    }
+@Override
+public String obtenerDetalles() {
+    // TODO Auto-generated method stub
+    return super.obtenerDetalles()+ "-valor de lentes"; 
+    
+}
+    
+}
